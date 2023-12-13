@@ -1,0 +1,90 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Chuannan Zhang}
+
+\basicInfo{
+  \email{edwardzcn98@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 15630152367} \textperiodcentered\ 
+  \linkedin[Edwardzcn]{https://www.linkedin.com/in/edwardzcn}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{University of Science and Technology of China (USTC)}, Hefei, China}{2021 -- Present}
+\textit{M.S.} Major in Computer Science, expected June 2024
+\datedsubsection{\textbf{Central South University}, Changsha, China}{2017 -- 2021}
+\textit{B.S.} Major in Computer Science
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{Alibaba Inc.} Hangzhou, China}{September 2022 -- April 2023}
+\role{Research Intern}{Mentor: Yingqiang Zhang}
+Build a geo-replicated storage system named EriaDB achieved fine-grained ownership management across multiple Paxos groups.
+\begin{itemize}
+  \item Implemented RPC triggered fine-grained ownership transfer protocol.
+  \item Implemented sysbench-geo adapted a well-known benchmark to generate geo-distributed workload distributed by multiple clients.
+\end{itemize}
+
+\datedsubsection{\textbf{Huawei Inc.} Shanghai, China}{October 2020 -- January 2021}
+\role{Research Intern}{Mentor: Xin Gao}
+Assist the verification Group of OS Kernel Lab building demos demonstrating formal verification in real-world softwares.
+\begin{itemize}
+  \item Implemented the front-end part of Lustre V6 compiler demo using ocammllex and ocamlyacc.
+  \item Learned the basic theory of formal verification and the usage of Coq.
+\end{itemize}
+
+\section{\faTasks\ Projects}
+\datedsubsection{\textbf{Verification and Implementaion of Fine-grained Consensus Protocol}}{June 2023 -- Present}
+Master Thesis Project
+
+\begin{itemize}
+  \item Use TLA+ to verify the correctness of a variant of Paxos protocol supporting fine-grained ownership transfer in the model layer.
+  \item Implement yet another framework for testing or reasoning about the implementation of actual distributed systems using specific consensus protocol.
+\end{itemize}
+
+
+\datedsubsection{\textbf{Preimage attack on SHA-3}}{April 2020 -- June 2020}
+\datedsubsection{Individual Projects}{URL: \href{https://github.com/Edwardzcn/KeccakAttack}{https://github.com/Edwardzcn/KeccakAttack}}
+
+\begin{itemize}
+  \item Attend the 2020 National Cryptography and Mathematic Challenge and win the second prize in the final.
+  \item Use linear structures (AsiaCrypt 16) to attack the first two rounds of Keccak256 and explore a specific structure to attack the third round.
+\end{itemize}
+
+
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C, C++, Python, Rust, Java, Go
+  \item Languages: English - Fluent, Mandarin - Native speaker
+  \item Sports and Arts: Basketball, Trekking, Mountaineering, Photography
+\end{itemize}
+
+% \section{\faHeartO\ Honors and Awards}
+% \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+% \datedline{Other awards}{2015}
+
+% \section{\faInfo\ Miscellaneous}
+% \begin{itemize}[parsep=0.5ex]
+%   \item Blog: http://your.blog.me
+%   \item GitHub: https://github.com/username
+%   \item Languages: English - Fluent, Mandarin - Native speaker
+% \end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
